@@ -7,12 +7,12 @@ const Footer = () => {
       {/* Left section */}
       <div className="flex items-center gap-3">
         <img src={locationimage} height={25} width={20} alt="logo" />
-        <h1 className="text-xl md:text-2xl font-semibold">Meet in Middle</h1>
+        <h1 className="text-xl md:text-2xl font-semibold">MidFusion</h1>
       </div>
 
       {/* Right section */}
       <h2 className="text-sm  text-white md:text-base">
-        © {new Date().getFullYear()} Meet in Middle. All rights reserved.
+        © {new Date().getFullYear()} MidFusion. All rights reserved.
       </h2>
     </div>
   );

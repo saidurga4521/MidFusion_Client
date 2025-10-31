@@ -95,7 +95,7 @@ self.addEventListener("push", (event) => {
   const data = event.data ? event.data.json() : {};
   console.log("[SW] Push received:", data);
 
-  const title = data.title || "Meet in the Middle";
+  const title = data.title || "MidFusion";
   const options = {
     body: data.body || "You have a new notification",
     icon: "/favicon.ico",

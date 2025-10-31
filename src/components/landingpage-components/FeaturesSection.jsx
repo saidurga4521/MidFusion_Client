@@ -53,7 +53,7 @@ const FeaturesSection = () => {
     <div className="py-12 px-6 bg-gray-50">
       {/* Title */}
       <div className="text-center mb-10">
-        <h1 className="text-3xl font-semibold">Why Choose Meet in Middle</h1>
+        <h1 className="text-3xl font-semibold">Why Choose MidFusion</h1>
         <p className="text-gray-600 mt-2 max-w-xl mx-auto">
           Everything you need to organize perfect meetings with optimal
           locations for everyone.

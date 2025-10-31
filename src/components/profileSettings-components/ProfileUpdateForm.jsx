@@ -122,7 +122,7 @@ const ProfileUpdateForm = ({
           <textarea
             value={isEditing ? formDataUnderEdit.bio : formData.bio}
             id="Bio"
-            placeholder="Demo user for Meet in Middle application"
+            placeholder="Demo user for MidFusion application"
             className={`border rounded px-3 py-2 pl-10 w-full ${!isEditing && "pointer-events-none"}`}
             onChange={(e) =>
               setFormDataUnderEdit({

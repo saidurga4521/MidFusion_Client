@@ -15,7 +15,7 @@ const HeroSection = () => {
         {/* Logo + Title */}
         <div className="flex gap-2 items-center">
           <img src={locationimage} height={30} width={40} alt="logo" />
-          <h1 className="font-semibold text-xl sm:text-2xl">Meet In Middle</h1>
+          <h1 className="font-semibold text-xl sm:text-2xl">MidFusion</h1>
         </div>
 
         {/* Desktop Menu */}
@@ -85,7 +85,7 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 0.3 }}
           className="text-lg sm:text-xl mt-3 max-w-3xl text-gray-700"
         >
-          Meet in Middle helps you find the ideal location equidistant from all
+          MidFusion helps you find the ideal location equidistant from all
           participants. No more complicated discussions about where to meet.
         </motion.h2>
         <motion.button

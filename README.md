@@ -1,4 +1,4 @@
-# 🌍 Meet in the Middle
+# 🌍 MidFusion
 
 A location-based web application that helps users find a convenient **midpoint location** between multiple addresses, making it easier to plan meetups with friends, family, or colleagues.
 

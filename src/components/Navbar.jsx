@@ -88,7 +88,7 @@ const Navbar = () => {
         {/* Left Section - Logo + Title */}
         <div className="flex items-center space-x-3">
           <img src={locationimage} height={30} width={30} alt="logo" />
-          <h1 className="text-lg font-semibold">Meet in Middle</h1>
+          <h1 className="text-lg font-semibold">MidFusion</h1>
         </div>
 
         {/* Middle Section - Desktop Buttons */}

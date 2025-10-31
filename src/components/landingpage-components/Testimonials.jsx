@@ -58,7 +58,7 @@ const Testimonials = () => {
       <div className="text-center mb-12">
         <h1 className="text-3xl font-semibold">What Our Users Say</h1>
         <p className="text-gray-600 mt-2 max-w-xl mx-auto">
-          Hear from people who have used Meet in Middle to simplify their
+          Hear from people who have used MidFusion to simplify their
           meetings.
         </p>
       </div>
