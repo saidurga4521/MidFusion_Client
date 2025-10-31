@@ -44,7 +44,7 @@ function App() {
   const { subscribeToPush } = useNotification();
 
   useEffect(() => {
-    fetch("http://localhost:8000")
+    fetch("https://mid-fusion-server.vercel.app")
       .then((res) => {
         if (!res.ok) throw new Error("Server error");
       })

@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http://localhost:8000", // backend server
+        target: "https://mid-fusion-server.vercel.app/", // backend server
         changeOrigin: true,
         secure: false,
       },
