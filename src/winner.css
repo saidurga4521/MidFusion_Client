@@ -1,0 +1,88 @@
+.winner {
+  position: relative;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #f59e0b, #fcd34d, #fbbf24);
+  color: #1f2937;
+  font-weight: bold;
+  box-shadow: 0 0 30px rgba(252, 211, 77, 0.8);
+  overflow: hidden;
+  animation: pulse 1.5s infinite;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(252, 211, 77, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(252, 211, 77, 1);
+  }
+}
+
+/* Confetti container */
+.winner::before,
+.winner::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: confetti 1s infinite ease-in-out;
+}
+
+.winner::after {
+  background: #f472b6; /* pink */
+  animation-delay: 0.3s;
+}
+
+.winner::before {
+  background: #34d399; /* green */
+}
+
+/* Confetti animation */
+@keyframes confetti {
+  0% {
+    transform: translate(-50%, 0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(calc(-50% + 30px), 30px) rotate(180deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(calc(-50% - 30px), 60px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Sparkles */
+.sparkle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(circle, #fff 0%, #fbbf24 100%);
+  border-radius: 50%;
+  animation: sparkle 1s infinite;
+}
+
+@keyframes sparkle {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
