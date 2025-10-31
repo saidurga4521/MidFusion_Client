@@ -29,7 +29,7 @@ import {
   updatemeetingDetails,
 } from "../services/meetings";
 import Modal from "../components/Modal";
-import VotingCard from "../components/votingCard";
+import VotingCard from "../components/VotingCard";
 import VotingResults from "../components/VotingResults";
 import VoteDistribution from "../components/VoteDistribution";
 import MapContainer from "../components/MapContainer";
