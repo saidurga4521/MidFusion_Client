@@ -24,7 +24,9 @@ const WithAuth = ({ children }) => {
 
     const checkAuth = async () => {
       try {
+        console.log("The user")
         const user = await getUserData();
+        console.log("The user",user)
         if (isMounted && user) {
           dispatch(setAuthenticated(user.data.success));
      

@@ -43,22 +43,22 @@ function App() {
   const [serverDown, setServerDown] = useState(false);
   const { subscribeToPush } = useNotification();
 
-  useEffect(() => {
-    fetch("https://mid-fusion-server.vercel.app")
-      .then((res) => {
-        if (!res.ok) throw new Error("Server error");
-      })
-      .catch(() => setServerDown(true));
-  }, []);
+  // useEffect(() => {
+  //   fetch("http://localhost:8000")
+  //     .then((res) => {
+  //       if (!res.ok) throw new Error("Server error");
+  //     })
+  //     .catch(() => setServerDown(true));
+  // }, []);
 
-  useEffect(() => {
-    // Auto-subscribe on mount
-    subscribeToPush();
-  }, []);
+  // useEffect(() => {
+  //   // Auto-subscribe on mount
+  //   subscribeToPush();
+  // }, []);
 
-  if (serverDown) {
-    return <ServerError />;
-  }
+  // if (serverDown) {
+  //   return <ServerError />;
+  // }
 
   if (import.meta.env.MODE === "development") {
     console.log("[SW]: forces a clean slate every time you restart Vite. ");

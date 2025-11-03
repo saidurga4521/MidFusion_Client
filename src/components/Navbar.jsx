@@ -62,7 +62,9 @@ const Navbar = () => {
 
   useEffect(() => {
     const getUser = async () => {
+      
       const user = await getUserData();
+      
       dispatch(
         setUser({
           email: user.data.data.email,

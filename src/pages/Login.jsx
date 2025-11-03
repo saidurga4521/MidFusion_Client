@@ -63,6 +63,7 @@ const Login = () => {
       authChannel.postMessage({ type: "LOGIN", payload: userData });
 
       toast.success("Login successful!");
+      console.log("The login")
       setTimeout(() => {
         navigate("/home");
       }, 1000);
